@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PATNED Front-End Design</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/bower_components/foundation/js/foundation.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
+    ></script>
+  </head>
+  <body>
+    <div data-magellan-expedition="fixed" id="magellan">
+      <div class="row">
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="">PATNED</a></h1>
+            </li>
+            <!--  <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li> -->
+          </ul>
+
+          <section id="topBar" class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul>
+              <li data-magellan-arrival="work" class="active">
+                <a href="#work"><div class="section img-work">work</div></a>
+              </li>
+              <li data-magellan-arrival="archives">
+                <a href="#archives"><div class="section img-archives">archives</div></a>
+              </li>
+              <li data-magellan-arrival="about">
+                <a href="#about"><div class="section img-about">about</div></a>
+              </li>
+              <li class="show-for-small-only">
+                <a href="#contactme" data-reveal-id="modal-contact"
+                  ><div class="section img-about">contact</div></a
+                >
+              </li>
+
+              <li id="contact-me" class="hide-for-small-only">
+                <a href="#contactme" data-reveal-id="modal-contact">contact me</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
+
+    <!--contact me modal start-->
+    <div id="modal-contact" class="reveal-modal" data-reveal>
+      <div id="contact-details">
+        <p class="lead">
+          <a id="mail-address" href="mailto:patned777@gmail.com "
+            ><img src="img/email_address.png" alt=""
+          /></a>
+        </p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </div>
+    <!--contact me modal end-->
+
+    <section id="intro" class="intro">
+      <div class="left-shadow row">
+        <div class="row">
+          <a name="work"></a>
+          <div class="small-4 medium-3 large-2 columns">
+            <h2 data-magellan-destination="work">work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns black-light">
+            <h1>
+              A collection encompassing my venture into royalty free music production and
+              distribution to content creators and businesses alike. This newfound endeavour led me
+              to explore technologies and broaden my skill set.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-2 columns">
+          <h3>MELODYFLIX.COM</h3>
+        </div>
+
+        <div class="large-10 columns">
+          <h4>Made with: WordPress, HTML, CSS/SASS, Javascript/jQuery, Bootstrap, PHP</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/melodyflix/mf-landing-page-short.png" alt="melodyflix website" />
+      </div>
+
+      <div class="row">
+        <div id="nanogallery2"></div>
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p><strong>Role:</strong> Designer and Developer</p>
+        </div>
+        <div class="columns large-2">
+          <a class="button right" href="http://www.melodyflix.com/" target="_blank">Take a look</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>CREATIVE COMMONS MUSIC</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: Next.js 10, PostgreSQL</h4>
+        </div>
+      </div>
+
+      <br /><br /><br />
+
+      <div class="row">
+        <div id="CCMS"></div>
+
+        <script>
+          jQuery(document).ready(function () {
+            jQuery('#CCMS').nanogallery2({
+              // ### gallery settings ###
+              thumbnailHeight: 175,
+              thumbnailWidth: 175,
+              itemsBaseURL: '/img/portfolio/ccms/',
+              thumbnailHoverEffect2: 'scale120',
+              thumbnailGutterWidth: 10,
+              thumbnailBorderHorizontal: 0,
+              thumbnailBorderVertical: 0,
+
+              // ### gallery content ###
+              items: [
+                { src: 'ccms-2.png' },
+                { src: 'ccms-3.png' },
+                { src: 'ccms-4.png' },
+                { src: 'ccms-5.png' },
+                { src: 'ccms-6.png' },
+                { src: 'ccms-7.png' },
+              ],
+            });
+          });
+        </script>
+        <br /><br /><br />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-3">
+          <p><strong>Role:</strong> Designer and Developer</p>
+        </div>
+
+        <div class="columns large-9">
+          <p>
+            This project was initiated with the aim to promote and distribute music that had been
+            released under Creative Commons licenses. The prevailing websites in this niche lacked a
+            user-friendly interface and interaction at that time. Therefore, this project was
+            designed to address this issue by creating a more modern and sophisticated website that
+            would fill this gap. However, the project could not be fully completed as it was
+            eventually integrated into my other project, melodyflix.com, which had already been
+            operational for several years. <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>RANDOM QUOTE MACHINE</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: React, SCSS</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/rqm/quote.png" alt="Random quote machine image" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-2">
+          <p><strong>Role:</strong> Designer and Developer</p>
+        </div>
+        <div class="columns large-8">
+          <p>
+            The Random Quote Machine is a simple React application that was created as a part of the
+            FreeCodeCamp's front-end libraries certification program. The aim of this application
+            was to provide a simple and user-friendly way for users to access a collection of random
+            quotes. If you require additional information regarding this project, please visit the
+            FreeCodeCamp's dedicated
+            <a
+              href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine"
+              >project page</a
+            >.
+          </p>
+        </div>
+        <div class="columns large-2">
+          <a class="button right" href="https://random-quote-machine-1.netlify.app/" target="_blank"
+            >Take a look</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <section id="archives" class="intro">
+      <div class="left-shadow row">
+        <div class="row">
+          <div class="small-4 medium-3 large-2 columns">
+            <a name="archives"></a>
+            <h2 data-magellan-destination="archives">archives</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <h1>
+              This is a compilation of my prior projects, developed for ministers, towns, and
+              private enterprises. Most of these websites were hosted on the Lifefay portal and
+              powered by Navigo CMS, a Java-based content management system. The final example in
+              this collection features mobile applications (Nokia Headlines).
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-2 columns">
+          <h3>INION LTD</h3>
+        </div>
+
+        <div class="large-10 columns">
+          <h4>Made with: Photoshop, Sass, Bootstrap</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/inion-responsive.jpg" alt="Inion website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p><strong>Role:</strong> Designer and Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Inion modal start-->
+    <div id="modal-inion" class="reveal-modal" data-reveal>
+      <img src="img/portfolio/inion-frontpage-final.jpg" alt="Inion frontpage" />
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!--Inion modal end-->
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>Kokkola City (Finland)</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/kokkola-responsive.jpg" alt="kokkola website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p>
+            Large responsive multi-language website with over 1000 pages for the city of Kokkola in
+            the province of Western Finland.<br />
+            <strong>Role:</strong> Developer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>United Nations University</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/wider-responsive.jpg" alt="Wider website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p>
+            Responsive website for the World Institute for Development Economics Research is part of
+            the United Nations University (UNU) <br />
+
+            <strong>Role:</strong> Developer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-2 columns">
+          <h3>Gate8</h3>
+        </div>
+
+        <div class="large-10 columns">
+          <h4>Made with: HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/gate8-responsive.jpg" alt="kokkola website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p>
+            Responsive website for Gate8 a business park in Vantaa, Finland.<br />
+
+            <strong>Role:</strong> Developer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>IPR University Center</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: A pencil, Photoshop, HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/ipr.jpg" alt="kokkola website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p><strong>Role:</strong> Designer and Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>Rakennusperintö</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: A pencil, Photoshop, HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/rakennus-responsive.jpg" alt="Wider website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p>
+            Reponsive website for Rakennusperintö (Ministry of the Environment)<br />
+
+            <strong>Role:</strong> Designer and Developer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>Finnfund</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: A pencil, Photoshop, HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/finnfund.jpg" alt="kokkola website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p><strong>Role:</strong> Designer and Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="stripe orange">
+      <div class="row">
+        
+        <div class="large-5 columns">
+          <h3>Hila - Finland Pharmaceuticals Pricing Board</h3>
+        </div>
+        
+        <div class="large-7 columns">
+          <h4>Made with: A pencil Photoshop HTML CSS Javascript jQuery JSP JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/Hila.jpg" alt="Wider website">
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+            <p>
+              Currently offline.<br>
+              <strong>Role:</strong> Designer and Developer
+
+            </p>
+        </div>
+        
+      </div>
+
+    </div> -->
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-5 columns">
+          <h3>Visit Parainen (Finland)</h3>
+        </div>
+
+        <div class="large-7 columns">
+          <h4>Made with: A pencil, Photoshop</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/visit_parainen_1.jpg" alt="Wider website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p><strong>Role:</strong> Designer</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Valvira modal start-->
+    <div id="modal-valvira" class="reveal-modal" data-reveal>
+      <img src="img/portfolio/valvira-fp.jpg" alt="valvira" />
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    <!--Valvira modal end-->
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-6 columns">
+          <h3>Valvira (Finnish Ministry of Health and Social Affairs)</h3>
+        </div>
+
+        <div class="large-6 columns">
+          <h4>Made with: A pencil, Photoshop</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/Valvira.jpg" alt="kokkola website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p>
+            Design proposal for the website of the National Supervisory Authority for Welfare and
+            Health in Finland + banners for a smoking prevention campaign. One tricky requirement
+            for this campaign was to represent smoking and cigarettes without cigarettes :-/ <br />
+
+            <strong>Role:</strong> Designer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-2 columns">
+          <h3>TES</h3>
+        </div>
+
+        <div class="large-10 columns">
+          <h4>Made with: A pencil, Photoshop</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/TES-final.jpg" alt="Wider website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p>
+            Logo for a public commission belonging to the Finnish Ministry of Health and Social
+            Affairs. The logo had to represent the protection and help provided to employees by this
+            commission regarding work contracts and employers.<br />
+
+            <strong>Role:</strong> Designer
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="large-2 columns">
+          <h3>Delfoi</h3>
+        </div>
+
+        <div class="large-10 columns">
+          <h4>Made with: HTML, CSS, Javascript, jQuery, JSP, JSTL</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/delfoi.jpg" alt="Delfoi website" />
+      </div>
+
+      <div class="row description">
+        <div class="columns large-10">
+          <p><strong>Role:</strong>Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black-light">
+      <div class="row">
+        <div class="large-4 columns">
+          <h3>Alexandria campaign</h3>
+        </div>
+
+        <div class="large-8 columns">
+          <h4>Made with: html5 boilerplate, TypeKit, PHP</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/alexandria_1.jpg" alt="Alexandria campaign pages" />
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/alexandria_2.jpg" alt="Alexandria campaign pages" />
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/alexandria_3.jpg" alt="Alexandria campaign pages" />
+      </div>
+
+      <div class="row description">
+        <div class="columns">
+          <p><strong>Role:</strong> Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stripe black">
+      <div class="row">
+        <div class="columns">
+          <h3>Nokia Channels/Headlines (2006-2009)</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <img src="img/portfolio/nokia_channels.jpg" alt="Nokia channels" />
+      </div>
+
+      <div class="row">
+        <div class="columns">
+          <p>
+            Role: Front end developer for mobile applications(Nokia Headlines) with a proprietary
+            technology and programming language named Origo from Offscreen Technologies Ltd. The
+            project was then migrated to Nokia WRT Widgets technology. A platform which was based on
+            AJAX (Javascript, XHTML, CSS) and Nokia Web Runtime<br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro">
+      <div class="left-shadow row">
+        <div class="row">
+          <div class="small-4 medium-3 large-2 columns">
+            <a name="about"></a>
+            <h2 data-magellan-destination="about">about</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <h3>
+              Skills in Frontend design and development.<br /><br />
+
+              Skills in Graphic User Interface Design, image production, typography and layout.<br /><br />
+              Ability to develop innovative design concepts based on clients brands, design language
+              and technical briefs.
+              <br /><br />
+              <strong>Development stack:</strong> HTML/CSS, Sass, Javascript, jQuery, React,
+              Next.js, Node.js, Git, Bitbucket, VSCode, Chrome/Firefox DevTools.<br /><br />
+              <strong>Design stack:</strong> A pencil, Photoshop, Illustrator, Figma.<br />
+              <br />
+              Skills in music production (Composing, arranging, mixing, mastering)
+              <br />
+              Wanna hear some music tracks I made? Check this playlist:
+              <br />
+              <a href="https://www.melodyflix.com/artist/melodyflix/" target="_blank">PLAYLIST</a>
+
+              <br /><br />
+              This site is several years old, and built with the responsive Framework, Foundation 5.
+              I'm planning to revamp it with Astro, the new kid on the block. Stay tuned!
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="blue-navy">
+      <div class="row">
+        <div class="large-12 columns">
+          §
+          <img src="img/portfolio/about.png" alt="" />
+        </div>
+      </div>
+    </div> -->
+
+    <footer class="black">
+      <div class="row large-5 medium-5 small-5 columns">
+        <!-- <p>© 2023 PatNed. All rights reserved.</p> -->
+      </div>
+
+      <div class="row large-4 medium-4 small-4 columns">
+        <p>
+          Built with: <span><img src="img/foundation.png" alt="foundation logo" /></span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
