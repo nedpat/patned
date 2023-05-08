@@ -7444,7 +7444,7 @@ th.hide-for-touch {
     position: relative;
     bottom: 14px;
     font-size: 1em;
-    margin-left: 9px;
+    /* margin-left: 9px; */
 }
 
 .top-bar .top-bar-section #contact-me:hover {
